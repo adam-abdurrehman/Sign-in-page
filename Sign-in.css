@@ -1,0 +1,86 @@
+:root{
+    --primary-color : #fff;
+    --secondary-color : #000;
+    --afterly-color : #03001C;
+
+}
+.dark-theme{
+    --primary-color: #03001C;
+    --secondary-color: #fff;
+}
+body{
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%; 
+}
+
+.header{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-icons{
+    height: 5vh;
+    width: 5vw;
+}
+.box{
+    width: 45vh;
+    height: 40vw;
+    background-color: #fff;
+    border:0.5px solid var(--afterly-color);
+    border-radius: 15px;
+    opacity: 0.9.5;
+    transition: 500ms;
+    padding: 10px;
+}
+.box:hover{
+    box-shadow: 0 0 5px var(--secondary-color),
+    0px 0px 10px var(--afterly-color);
+    opacity: 1.0;
+}
+
+form{
+    padding: 10px;
+}
+
+p:nth-child(1){
+    font-size:45px;
+    text-align:center;
+}
+
+input[type=text],[type=email],[type=password] {
+    width: 90%;
+    padding: 12px 10px 12px 20px;
+    margin: 0px 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 90%;
+    background-color: var(--afterly-color);
+    color: var(--primary-color);
+    padding: 11px 10px;
+    margin: 8px 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+        background-color: var(--secondary-color);
+
+}
+
+h1{
+    position:absolute;
+    bottom:10px;
+    font-family:'Freestyle Script';
+    left:990px;  
+}
